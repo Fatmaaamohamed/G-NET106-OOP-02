@@ -9,7 +9,7 @@ namespace G_NET106_OOP_02
         #region Question03 
         private string trackingCode;
         private string description;
-        private double weight;
+        private decimal weight;
         private decimal deliveryFee;
 
 
@@ -43,7 +43,7 @@ namespace G_NET106_OOP_02
         }
 
 
-        public double Weight
+        public decimal Weight
         {
             get => weight;
             set
@@ -71,7 +71,7 @@ namespace G_NET106_OOP_02
         }
 
 
-        public decimal EstimatedCost
+        public virtual decimal EstimatedCost
         {
             get => DeliveryFee + ((decimal)Weight * 5m);
         }
@@ -81,7 +81,7 @@ namespace G_NET106_OOP_02
 
             this.trackingCode = "DEFAULT_CODE";
             this.description = "Unknown";
-            this.weight = 1.0;
+            this.weight = 1m;
             this.deliveryFee = 50m;
             this.Destination = default;
 
@@ -90,12 +90,12 @@ namespace G_NET106_OOP_02
         }
 
 
-        public Shipment(string trackingCode, string description, double weight, decimal deliveryFee, DeliveryAddress destination)
+        public Shipment(string trackingCode, string description, decimal weight, decimal deliveryFee, DeliveryAddress destination)
         {
 
             this.trackingCode = "DEFAULT_CODE";
             this.description = "Unknown";
-            this.weight = 1.0;
+            this.weight = 1m;
             this.deliveryFee = 50m;
             this.Destination = destination;
 
@@ -107,7 +107,7 @@ namespace G_NET106_OOP_02
         }
 
 
-        public void UpdateDeliveryFee(decimal newFee)
+          public void UpdateDeliveryFee(decimal newFee)
         {
             if (newFee > 0)
             {

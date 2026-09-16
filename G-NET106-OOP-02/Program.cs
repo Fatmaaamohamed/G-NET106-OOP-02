@@ -20,6 +20,23 @@
             #endregion
 
 
+            #region Question02
+
+            /* A) Shipment
+
+               B) ExpressShipment
+
+               C) TrackingCode property
+
+               D) Instead of typing the same code in multiple places, you write it once in the parent class. If you ever need to fix or update it,
+                  you only change it in one spot instead of fixing it everywhere.
+
+             */
+
+            #endregion
+
+
+
         }
     }
 }

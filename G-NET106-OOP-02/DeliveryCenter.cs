@@ -16,7 +16,7 @@ namespace G_NET106_OOP_02
         public DeliveryCenter( string centerName = "Main Delivery Center " )
         {
 
-            CenterName = CenterName;
+            CenterName = centerName;
 
             shipments = new Shipment[20];
         }
@@ -114,7 +114,8 @@ namespace G_NET106_OOP_02
                 if (shipments[i] != null && !string.IsNullOrEmpty(shipments[i].TrackingCode))
                 {
                     hasShipments = true;
-                    Console.WriteLine($"[{i + 1}] Code: {shipments[i].TrackingCode} | Desc: {shipments[i].Description} | Weight: {shipments[i].Weight}kg | Est. Cost: {shipments[i].EstimatedCost:C}");
+                    // Remove :C and replace with EGP (or no currency label at all)
+                    Console.WriteLine($"[{i + 1}] Code: {shipments[i].TrackingCode} | Desc: {shipments[i].Description} | Weight: {shipments[i].Weight}kg | Est. Cost: {shipments[i].EstimatedCost} EGP");
                 }
             }
 

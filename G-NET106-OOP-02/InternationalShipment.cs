@@ -61,6 +61,18 @@ namespace G_NET106_OOP_02
 
         }
 
+        public override void PrintShipment()
+        {
+            Console.WriteLine("International Shipment\n");
+            Console.WriteLine($"Tracking Code : {TrackingCode}");
+            Console.WriteLine($"Description   : {Description}");
+            Console.WriteLine($"Weight        : {Weight} KG");
+            Console.WriteLine($"Delivery Fee  : {DeliveryFee} EGP");
+            Console.WriteLine($"Destination Country : {DestinationCountry}");
+            Console.WriteLine($"Customs Fee         : {CustomsFee} EGP");
+            Console.WriteLine($"Estimated Cost      : {EstimatedCost} EGP");
+        }
+
         #endregion
     }
 }

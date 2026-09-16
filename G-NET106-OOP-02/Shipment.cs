@@ -116,7 +116,7 @@ namespace G_NET106_OOP_02
         }
 
 
-        public void PrintShipment()
+        public virtual void PrintShipment()
         {
             Console.WriteLine("");
             Console.WriteLine($" Tracking Code : {TrackingCode}");

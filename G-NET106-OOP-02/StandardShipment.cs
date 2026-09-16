@@ -18,6 +18,13 @@ namespace G_NET106_OOP_02
 
         }
 
+
+        public override void PrintShipment()
+        {
+            Console.WriteLine("Standard Shipment\n");
+            base.PrintShipment();
+        }
+
         #endregion
     }
 }

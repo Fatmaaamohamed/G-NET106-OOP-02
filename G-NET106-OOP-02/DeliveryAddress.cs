@@ -7,7 +7,7 @@ namespace G_NET106_OOP_02
     internal struct DeliveryAddress
     {
         #region Question03
-        public string City;
+        public string City; 
 
         public string Street;
 
